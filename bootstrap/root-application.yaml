@@ -4,19 +4,17 @@ metadata:
   name: root-app
   namespace: argocd
 spec:
-  destination:
-    namespace: argocd
-    server: https://kubernetes.default.svc
+  project: default
   source:
     repoURL: https://github.com/schwja04/k8s-homelab.git
     targetRevision: HEAD
     path: .
     directory:
       recurse: true
-  project: default
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
-    syncOptions:
-      - CreateNamespace=true
