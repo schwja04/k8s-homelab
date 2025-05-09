@@ -12,7 +12,7 @@ spec:
     helm:
       releaseName: external-secrets
       valueFiles:
-        - ../../../apps/shared/external-secrets/base/helm-values.yaml
+        - ./helm-values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: external-secrets
