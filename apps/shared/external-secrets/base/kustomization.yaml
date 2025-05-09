@@ -1,4 +1,3 @@
 resources:
-  - namespace.yaml
-#  - clustersecretstore.yaml
-#  - helm-values.yaml
+  - clustersecretstore.yaml
+  - helm-values.yaml
