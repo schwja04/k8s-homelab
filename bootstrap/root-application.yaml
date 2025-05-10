@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/schwja04/k8s-homelab.git
     targetRevision: HEAD
-    path: .
+    path: applications
     directory:
       recurse: true
   destination:
