@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: infrastructure
+  namespace: argocd
+spec:
+  description: Shared infrastructure resources like cert-manager, external-secrets, etc.
+  sourceRepos:
+    - 'https://github.com/schwja04/k8s-homelab'
+  destinations:
+    - namespace: 'cert-manager'
+      server: '*'
+    - namespace: 'external-secrets'
+      server: '*'
+    - namespace: 'monitoring'
+      server: '*'
+    - namespace: 'traefik'
+      server: '*'
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
