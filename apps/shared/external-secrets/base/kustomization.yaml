@@ -8,7 +8,6 @@ resources:
 
 helmCharts:
   - name: external-secrets
-    chartPath: ../charts/external-secrets
     releaseName: external-secrets
     namespace: external-secrets
     valuesFile: helm-values.yaml
