@@ -1,4 +1,3 @@
 resources:
 - ./cert-manager.yaml
-- ./external-secrets.yaml
 - ./traefik.yaml
