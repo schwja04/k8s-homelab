@@ -12,4 +12,4 @@ helmCharts:
     version: 0.16.2
     releaseName: external-secrets
     namespace: external-secrets
-    valueFile: helm-values.yaml
+    valuesFile: helm-values.yaml
