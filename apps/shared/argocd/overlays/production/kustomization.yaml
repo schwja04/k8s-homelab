@@ -1,2 +1,8 @@
 resources:
   - ../../base
+
+configMapGenerator:
+  - name: argocd-cm
+    namespace: argocd
+    literals:
+      - kustomize.buildOptions=--enable-helm --load-restrictor LoadRestrictionsNone

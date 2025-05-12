@@ -5,9 +5,3 @@ namespace: argocd
 
 resources:
   - https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
-
-configMapGenerator:
-  - name: argocd-cm
-    namespace: argocd
-    literals:
-      - kustomize.buildOptions=--enable-helm --load-restrictor LoadRestrictionsNone
