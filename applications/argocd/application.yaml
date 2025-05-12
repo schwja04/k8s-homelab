@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: external-secrets
+  name: argocd-self
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -9,11 +9,11 @@ spec:
   project: infrastructure
   source:
     repoURL: https://github.com/schwja04/k8s-homelab
-    path: apps/shared/external-secrets/overlays/production
+    path: apps/shared/argocd/overlays/production
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
-    namespace: external-secrets
+    namespace: argocd
   syncPolicy:
     automated:
       prune: true
