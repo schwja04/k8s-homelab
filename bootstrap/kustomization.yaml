@@ -5,3 +5,4 @@ resources:
 - ../applications
 - ../namespaces
 - ../projects
+- ./argocd
