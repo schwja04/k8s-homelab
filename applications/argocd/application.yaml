@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/schwja04/k8s-homelab
-    path: applications/argocd
+    path: apps/shared/argocd
     targetRevision: HEAD
     kustomize:
       buildOptions:
