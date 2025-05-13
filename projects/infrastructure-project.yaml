@@ -8,6 +8,8 @@ spec:
   sourceRepos:
     - 'https://github.com/schwja04/k8s-homelab'
   destinations:
+    - namespace: 'argocd'
+      server: '*'
     - namespace: 'cert-manager'
       server: '*'
     - namespace: 'external-secrets'
