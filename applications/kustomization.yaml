@@ -1,4 +1,5 @@
 resources:
 - ./argocd
+- ./csi-nfs
 - ./external-secrets
 

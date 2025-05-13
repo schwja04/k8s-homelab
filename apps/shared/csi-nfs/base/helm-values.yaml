@@ -1,0 +1,10 @@
+controller:
+  runOnControlPlane: true
+  replicaCount: 3
+  dnsPolicy: ClusterFirstWithHostNet
+
+node:
+  dnsPolicy: ClusterFirstWithHostNet
+
+kubeletDir: "/var/lib/kubelet"
+
