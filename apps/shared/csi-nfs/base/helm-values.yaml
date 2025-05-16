@@ -6,5 +6,5 @@ controller:
 node:
   dnsPolicy: ClusterFirstWithHostNet
 
-kubeletDir: "/var/lib/rancher/k3s/agent/kubelet"
+kubeletDir: "/var/lib/kubelet"
 
