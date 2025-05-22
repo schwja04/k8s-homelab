@@ -9,7 +9,7 @@ spec:
   project: infrastructure
   source:
     repoURL: https://github.com/schwja04/k8s-homelab
-    path: apps/shared/csi-nfs/overlays/production
+    path: apps/infrastructure/csi-nfs/overlays/production
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc

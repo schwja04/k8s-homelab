@@ -9,7 +9,7 @@ spec:
   project: infrastructure
   source:
     repoURL: https://github.com/schwja04/k8s-homelab
-    path: apps/shared/monitoring/overlays/production
+    path: apps/infrastructure/monitoring/overlays/production
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
