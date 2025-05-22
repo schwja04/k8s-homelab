@@ -1,3 +1,10 @@
 ## TODOs:
-- [ ] Get the kube-prometheus-stack fully working
-    - Currently having issues with the generation of the CRDs, due to length of the CRD names
+- [ ] External Secret Store creating kv secrets
+- [ ] Cert manager with a persistent volume
+    - Will need to get cloudflare token from azure key vault
+- [ ] Traefik for ingress
+    - Gateway API
+- [ ] Rancher
+
+- [ ] Github Access for other repos
+    - Application deployments I would like to keep in a separate private repo
