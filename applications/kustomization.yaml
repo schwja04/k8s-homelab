@@ -1,6 +1,2 @@
 resources:
-- ./argocd
-- ./csi-nfs
-- ./external-secrets
-- ./monitoring
-
+- ./infrastructure
