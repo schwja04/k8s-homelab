@@ -5,6 +5,9 @@ metadata:
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
+  metadata:
+    annotations:
+      argocd.argoproj.io/sync-wave: "-100"
 spec:
   project: infrastructure
   source:
