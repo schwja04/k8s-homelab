@@ -3,9 +3,19 @@ kind: Kustomization
 
 namespace: argocd
 
-configMapGenerator:
-  - name: argocd-cm
-    namespace: argocd
-    behavior: merge
-    literals:
-      - kustomize.buildOptions=--enable-helm --load-restrictor LoadRestrictionsNone
+# configMapGenerator:
+#   - name: argocd-cm
+#     namespace: argocd
+#     behavior: merge
+#     literals:
+#       - kustomize.buildOptions=--enable-helm --load-restrictor LoadRestrictionsNone
+resources:
+- stubbed-argocd-cm.yaml
+
+patches:
+  - target:
+      version: v1
+      kind: ConfigMap
+      name: argocd-cm
+      namespace: argocd
+    path: argocd-cm-patch.yaml
