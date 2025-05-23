@@ -3,4 +3,5 @@ resources:
 - ./csi-nfs
 - ./external-secrets
 - ./monitoring
+- ./reflector
 
