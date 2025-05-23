@@ -10,12 +10,5 @@ namespace: argocd
 #     literals:
 #       - kustomize.buildOptions=--enable-helm --load-restrictor LoadRestrictionsNone
 resources:
-- stubbed-argocd-cm.yaml
+- https://raw.githubusercontent.com/argoproj/argo-cd/refs/heads/master/manifests/base/config/argocd-cm.yaml
 
-patches:
-  - target:
-      version: v1
-      kind: ConfigMap
-      name: argocd-cm
-      namespace: argocd
-    path: argocd-cm-patch.yaml

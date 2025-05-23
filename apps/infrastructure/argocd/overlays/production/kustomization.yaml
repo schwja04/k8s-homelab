@@ -3,3 +3,10 @@ kind: Kustomization
 
 resources:
   - ../../base
+
+configMapGenerator:
+  - name: argocd-cm
+    namespace: argocd
+    behavior: merge
+    literals:
+      - kustomize.buildOptions=--enable-helm --load-restrictor LoadRestrictionsNone
